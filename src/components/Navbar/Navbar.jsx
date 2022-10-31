@@ -1,4 +1,5 @@
 import Navlinks from "./Navlinks/Navlinks";
+import CartWidget from "./CartWidget/CartWidget";
 import "./Navbar.scss";
 
 function Navbar() {
@@ -22,8 +23,16 @@ function Navbar() {
             <span className="toggler-icon middle-bar"></span>
             <span className="toggler-icon bottom-bar"></span>
           </button>
-          {/* Item list */}
-          <Navlinks />
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+              {/* NAVLINKS CON COMPONENTE */}
+              <Navlinks name="Home" />
+              <Navlinks name="About" />
+              <Navlinks name="Contact" />
+              <Navlinks name="Shop" />
+              <CartWidget />
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
