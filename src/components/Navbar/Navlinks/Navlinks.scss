@@ -1,0 +1,48 @@
+@use "../../../sass/global/" as *;
+div {
+  transition: 0.5s ease;
+  ul {
+    li {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 43px;
+      a {
+        font-style: normal !important;
+        font-weight: 400 !important;
+        font-size: small !important;
+        line-height: 19px !important;
+        color: $clr-light-500 !important;
+        text-transform: uppercase;
+        margin-right: 20px;
+        position: relative;
+        display: block;
+        padding: 4px 0;
+        transition: 0.5s;
+        width: fit-content;
+        &::after {
+          position: absolute;
+          content: "";
+          top: 100%;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          background: $clr-main;
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 0.5s;
+        }
+
+        &:hover {
+          color: $clr-light-500 !important;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+    }
+  }
+}

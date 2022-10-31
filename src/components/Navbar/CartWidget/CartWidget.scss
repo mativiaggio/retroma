@@ -1,0 +1,36 @@
+@use "../../../sass/global/" as *;
+
+.cart-widget-container {
+  height: fit-content;
+  position: relative;
+  .cart-items {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background-color: $clr-main;
+    height: 25px;
+    width: 25px;
+    border-radius: 500px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 62em) {
+      right: auto;
+      height: 15px;
+      width: 15px;
+    }
+    p {
+      height: 10px;
+      color: white;
+    }
+  }
+  .cart {
+    .bi-bag-check {
+      font-size: 22px !important;
+    }
+    &::after {
+      width: 0%;
+    }
+  }
+}
