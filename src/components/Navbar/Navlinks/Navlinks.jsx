@@ -34,7 +34,11 @@ export default function Navlinks(props) {
   return (
     <>
       <li className="nav-item">
-        <a className="nav-link active" aria-current="page" href="#home">
+        <a
+          className="nav-link active"
+          aria-current="page"
+          href={`${props.section}`}
+        >
           {props.name}
         </a>
       </li>

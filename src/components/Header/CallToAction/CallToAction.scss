@@ -1,0 +1,22 @@
+@use "../../../sass/global/" as *;
+
+button {
+  width: 237px;
+  height: 50px;
+  background-color: $clr-main !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: inset 0 0 0 0 $clr-dark-700 !important;
+  transition: ease-in-out 0.2s !important;
+  border: 3px solid $clr-dark-700 !important;
+  text-decoration: none;
+  font-size: 22px !important;
+  text-transform: uppercase !important;
+  color: $clr-light-500 !important;
+  font-weight: 800 !important;
+  font: "Open Sans" !important;
+  letter-spacing: 0.3em !important;
+  &:hover {
+    box-shadow: inset 0 -50px 0 0 $clr-dark-700 !important;
+  }
+}

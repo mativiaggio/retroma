@@ -1,0 +1,7 @@
+@use "../../sass/global/" as *;
+
+.section1 {
+  min-height: 100vh;
+  height: fit-content;
+  background-color: $clr-light-500;
+}

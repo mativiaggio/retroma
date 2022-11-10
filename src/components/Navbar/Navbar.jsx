@@ -26,10 +26,10 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
               {/* NAVLINKS CON COMPONENTE */}
-              <Navlinks name="Home" />
-              <Navlinks name="About" />
-              <Navlinks name="Contact" />
-              <Navlinks name="Shop" />
+              <Navlinks name="Home" section="#home" />
+              <Navlinks name="Shop" section="#shop" />
+              <Navlinks name="About" section="#about" />
+              <Navlinks name="Contact" section="#contact" />
               <CartWidget />
             </ul>
           </div>

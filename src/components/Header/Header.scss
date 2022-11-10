@@ -9,9 +9,10 @@
 .title-container {
   padding-top: 56px;
   display: flex;
-  justify-content: center;
   min-height: 100vh;
   height: fit-content;
+  flex-direction: column;
+  justify-content: flex-start !important;
   @media screen and (max-width: 62em) {
     min-height: fit-content;
   }
