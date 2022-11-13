@@ -22,7 +22,10 @@
   min-height: 100vh;
   height: fit-content;
   flex-direction: column;
-  justify-content: flex-start !important;
+  justify-content: center !important;
+  h1 {
+    font: "Open Sans";
+  }
   @media screen and (max-width: 62em) {
     min-height: fit-content;
   }

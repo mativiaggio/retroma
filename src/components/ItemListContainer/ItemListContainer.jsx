@@ -1,8 +1,21 @@
+import { useState, useEffect } from "react";
+
 import "./ItemListContainer.scss";
 import { Item } from "./Item";
-import movies from "../../data/data";
+import getItems from "../../Services/mockService";
 
 function ItemListContainer(props) {
+  const [movies, setMovies] = useState([]);
+
+  async function getItemsAsync() {
+    let response = await getItems();
+    setMovies(response);
+  }
+
+  useEffect(() => {
+    getItemsAsync();
+  }, []);
+
   return (
     <div className="container-fluid section1" id="movies">
       <div className="row">
@@ -11,12 +24,16 @@ function ItemListContainer(props) {
         </div>
         {movies.map((movie) => {
           return (
-            <div className="col-lg-2" style={{ marginBottom: `10px` }}>
+            <div
+              className="col-lg-3 col-md-6 col-sm-12"
+              style={{ marginBottom: `10px` }}
+            >
               <Item
                 imglocal={movie.imglocal}
                 title={movie.title}
                 descr={movie.description}
                 price={movie.price}
+                id={movie.id}
               />
             </div>
           );

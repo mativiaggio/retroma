@@ -1,5 +1,7 @@
 import "./Item.scss";
 
+import { Link } from "react-router-dom";
+
 function Item(props) {
   return (
     <div
@@ -9,9 +11,9 @@ function Item(props) {
       <div className="backdrop">
         <h1>{props.title}</h1>
         <p>{props.descr}</p>
-        <a href="#buy">
-          <button>Ticket ${props.price}</button>
-        </a>
+        <Link to={`movie/${props.id}-${props.title}`}>
+          <button>more</button>
+        </Link>
       </div>
     </div>
   );

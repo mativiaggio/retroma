@@ -1,4 +1,5 @@
 import "./Navlinks.scss";
+import { Link } from "react-router-dom";
 
 // export default function Navlinks() {
 //   return (
@@ -34,13 +35,13 @@ export default function Navlinks(props) {
   return (
     <>
       <li className="nav-item">
-        <a
+        <Link
           className="nav-link active"
           aria-current="page"
-          href={`${props.section}`}
+          to={`${props.section}`}
         >
           {props.name}
-        </a>
+        </Link>
       </li>
     </>
   );

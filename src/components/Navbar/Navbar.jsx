@@ -7,7 +7,7 @@ function Navbar() {
     <nav>
       <div className="navbar navbar-expand-lg fixed-top">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#home">
+          <a className="navbar-brand" href="/">
             Retroma
           </a>
           <button
@@ -26,10 +26,18 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
               {/* NAVLINKS CON COMPONENTE */}
-              <Navlinks name="Home" section="#home" />
-              <Navlinks name="Movies" section="#movies" />
-              <Navlinks name="About" section="#about" />
-              <Navlinks name="Contact" section="#contact" />
+              <Navlinks name="Home" section="/" />
+              <li className="nav-item">
+                <a
+                  className="nav-link active"
+                  aria-current="page"
+                  href="#movies"
+                >
+                  movies
+                </a>
+              </li>
+              <Navlinks name="About" section="/about" />
+              <Navlinks name="Contact" section="/contact" />
               <CartWidget />
             </ul>
           </div>
