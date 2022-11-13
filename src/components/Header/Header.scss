@@ -2,11 +2,21 @@
 
 .header-container {
   div {
-    background-color: $clr-light-500;
+    height: 100vh;
+    background-image: url("../../../public/assets/headerBackground.jpg");
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center center !important;
+    z-index: auto;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
   }
 }
 
 .title-container {
+  height: 100vh;
   padding-top: 56px;
   display: flex;
   min-height: 100vh;

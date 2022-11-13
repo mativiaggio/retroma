@@ -1,0 +1,58 @@
+@use "../../sass/global/" as *;
+.movie-card {
+  height: 350px;
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
+  background-position: center center !important;
+  z-index: auto;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  cursor: pointer;
+  .backdrop {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    h1 {
+      display: none;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-color: $clr-main;
+      font-family: "Open Sans";
+      font-size: medium;
+    }
+    p {
+      display: none;
+      color: white;
+      text-align: center;
+      font-size: small;
+    }
+    a {
+      text-decoration: none;
+    }
+    button {
+      display: none;
+      font-weight: 400 !important;
+      width: 150px !important;
+      height: 50px !important;
+      font-size: medium !important;
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+      h1,
+      p,
+      button {
+        display: block;
+      }
+    }
+  }
+}

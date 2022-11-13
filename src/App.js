@@ -9,10 +9,10 @@ function App() {
       <div className="App">
         <Navbar />
         <header className="header">
-          <Header title="Loombar" imglocal="header-image.jpg" />
+          <Header title="Retroma" imglocal="header-image.jpg" />
         </header>
         <main>
-          <ItemListContainer title="nuestros productos" />
+          <ItemListContainer title="our billboard" />
         </main>
       </div>
     </>

@@ -1,38 +1,26 @@
 import "./ItemListContainer.scss";
 import { Item } from "./Item";
+import movies from "../../data/data";
 
 function ItemListContainer(props) {
   return (
-    <div className="container-fluid section1" id="shop">
+    <div className="container-fluid section1" id="movies">
       <div className="row">
-        <div className="col-lg-3 gx-0">
-          <Item
-            imglocal="icecream-cone.jpg"
-            title="Ice Cream Cone"
-            price="$2.48"
-          />
+        <div className="shop-title">
+          <h1>{props.title}</h1>
         </div>
-        <div className="col-lg-3 gx-0">
-          <Item
-            imglocal="icecream-cone.jpg"
-            title="Ice Cream Cone"
-            price="$2.48"
-          />
-        </div>
-        <div className="col-lg-3 gx-0">
-          <Item
-            imglocal="icecream-cone.jpg"
-            title="Ice Cream Cone"
-            price="$2.48"
-          />
-        </div>
-        <div className="col-lg-3 gx-0">
-          <Item
-            imglocal="icecream-cone.jpg"
-            title="Ice Cream Cone"
-            price="$2.48"
-          />
-        </div>
+        {movies.map((movie) => {
+          return (
+            <div className="col-lg-2" style={{ marginBottom: `10px` }}>
+              <Item
+                imglocal={movie.imglocal}
+                title={movie.title}
+                descr={movie.description}
+                price={movie.price}
+              />
+            </div>
+          );
+        })}
       </div>
     </div>
   );

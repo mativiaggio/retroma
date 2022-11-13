@@ -8,7 +8,7 @@ function Navbar() {
       <div className="navbar navbar-expand-lg fixed-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="#home">
-            Loombar
+            Retroma
           </a>
           <button
             className="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
@@ -27,7 +27,7 @@ function Navbar() {
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
               {/* NAVLINKS CON COMPONENTE */}
               <Navlinks name="Home" section="#home" />
-              <Navlinks name="Shop" section="#shop" />
+              <Navlinks name="Movies" section="#movies" />
               <Navlinks name="About" section="#about" />
               <Navlinks name="Contact" section="#contact" />
               <CartWidget />

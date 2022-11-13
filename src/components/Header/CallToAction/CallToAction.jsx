@@ -3,8 +3,8 @@ import "./CallToAction.scss";
 export default function Cta() {
   return (
     <>
-      <a href="#shop">
-        <button className="btn">Shop</button>
+      <a href="#movies">
+        <button className="btn">movies</button>
       </a>
     </>
   );

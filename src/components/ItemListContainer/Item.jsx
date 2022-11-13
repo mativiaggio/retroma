@@ -1,16 +1,16 @@
+import "./Item.scss";
+
 function Item(props) {
   return (
-    <div className="card" style={{ width: "18rem" }}>
-      <img
-        src={`assets/${props.imglocal}`}
-        className="card-img-top"
-        alt="..."
-      ></img>
-      <div className="card-body">
-        <h5 className="card-title">{props.title}</h5>
-        <p className="card-text">{props.price}</p>
-        <a href="#" className="btn btn-primary">
-          Buy
+    <div
+      className="movie-card"
+      style={{ backgroundImage: `url("assets/movies/${props.imglocal}")` }}
+    >
+      <div className="backdrop">
+        <h1>{props.title}</h1>
+        <p>{props.descr}</p>
+        <a href="#buy">
+          <button>Ticket ${props.price}</button>
         </a>
       </div>
     </div>

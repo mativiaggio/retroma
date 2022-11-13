@@ -3,5 +3,29 @@
 .section1 {
   min-height: 100vh;
   height: fit-content;
-  background-color: $clr-light-500;
+  /* background-image: url("../../../public/assets/billboardBackground.jpg");
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
+  background-position: center center !important;
+  z-index: auto;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important; */
+  background-color: $clr-dark-700;
+  .shop-title {
+    color: $clr-main;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    width: 100%;
+    h1 {
+      font-weight: 800;
+      text-shadow: 5px 5px 0px #000000, 10px 10px 4px rgba(0, 0, 0, 0.25);
+      text-decoration: underline;
+    }
+  }
 }

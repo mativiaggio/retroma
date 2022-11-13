@@ -19,6 +19,13 @@ html,
 body {
   height: 100%;
 }
+
+html {
+  scroll-padding-top: 59px;
+  /* height of sticky navbar */
+  scroll-behavior: smooth;
+}
+
 /*
     Typographic tweaks!
     4. Add accessible line-height
