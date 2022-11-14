@@ -29,6 +29,27 @@
       text-transform: uppercase;
       font-weight: 700;
     }
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      width: fit-content;
+      p {
+        margin: 15px 15px 15px 0;
+      }
+      .imdb {
+        background-color: hsl(47, 82%, 49%);
+        font-family: "Amazon Ember";
+        color: #000000;
+        padding: 2px !important;
+        border-radius: 5px;
+      }
+    }
+    .stars {
+      display: flex;
+      * {
+        margin: 0 15px 15px 0;
+      }
+    }
     @media screen and (max-width: 62em) {
       align-items: center;
       background-repeat: no-repeat !important;

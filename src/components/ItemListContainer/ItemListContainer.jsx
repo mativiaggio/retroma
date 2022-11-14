@@ -39,6 +39,9 @@ function ItemListContainer(props) {
                 price={movie.price}
                 id={movie.id}
                 imgpath={imgpath}
+                year={movie.year}
+                rating={movie.rating}
+                duration={movie.duration}
               />
             </div>
           );
