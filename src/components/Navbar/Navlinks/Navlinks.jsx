@@ -31,7 +31,7 @@ import { Link } from "react-router-dom";
 //   );
 // }
 
-export default function Navlinks(props) {
+function Navlinks(props) {
   return (
     <>
       <li className="nav-item">
@@ -46,3 +46,40 @@ export default function Navlinks(props) {
     </>
   );
 }
+
+function Category() {
+  return (
+    <>
+      <li className="nav-item dropdown">
+        <a
+          className="nav-link"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Categiries
+        </a>
+        <ul className="dropdown-menu">
+          <li>
+            <Link className="dropdown-item" to="/movies">
+              All
+            </Link>
+          </li>
+          <li>
+            <Link className="dropdown-item" to="/movies/category/adventure">
+              Adventure
+            </Link>
+          </li>
+          <li>
+            <Link className="dropdown-item" to="/movies/category/horror">
+              Horror
+            </Link>
+          </li>
+        </ul>
+      </li>
+    </>
+  );
+}
+
+export { Navlinks, Category };

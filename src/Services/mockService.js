@@ -1,23 +1,32 @@
 import movies from "../data/data";
 
-function getItems() {
-    return new Promise((resolve) => {
+function getItems(idCategory) {
+  return new Promise((resolve) => {
+    if (idCategory === undefined) {
       setTimeout(() => {
         resolve(movies);
-      }, 2000);
-    });
-  }
-  
-  export function getSingleItem(idParam) {
-    return new Promise((resolve, reject) => {
-      let itemRequested = movies.find((item) => item.id === Number(idParam));
-  
-      if (itemRequested === undefined) reject("ERROR 404 Not Found");
-  
+      }, 500);
+    } else {
       setTimeout(() => {
-        resolve(itemRequested);
-      }, 2000);
-    });
-  }
+        let itemsRequested = movies.filter(
+          (item) => item.category === idCategory
+        );
+        resolve(itemsRequested);
+      }, 500);
+    }
+  });
+}
 
-  export default getItems;
+export function getSingleItem(idParam) {
+  return new Promise((resolve, reject) => {
+    let itemRequested = movies.find((item) => item.id === Number(idParam));
+
+    if (itemRequested === undefined) reject("ERROR 404 Not Found");
+
+    setTimeout(() => {
+      resolve(itemRequested);
+    }, 500);
+  });
+}
+
+export default getItems;

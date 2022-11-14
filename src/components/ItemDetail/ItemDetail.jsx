@@ -2,14 +2,19 @@ import "./ItemDetail.scss";
 
 function ItemDetail({ movie }) {
   return (
-    <div className="card-detail">
-      <div className="card-detail_img">
-        <img src={movie.imglocal} alt="Movie img" />
-      </div>
-      <div className="card-detail_detail">
+    <div
+      className="movie-page"
+      style={{
+        backgroundImage: `url("../../assets/movies/wallpapers/${movie.imglocal}")`,
+      }}
+    >
+      <div className="detail-container">
         <h2>{movie.title}</h2>
         <p>{movie.description}</p>
-        <h4 className="priceTag">$ {movie.price}</h4>
+        <h4 className="priceTag"></h4>
+        <a className="add-to-cart">
+          <button>add to cart for U$D{movie.price}</button>
+        </a>
       </div>
     </div>
   );

@@ -18,14 +18,33 @@ function App() {
                 <header className="header">
                   <Header title="Retroma" imglocal="header-image.jpg" />
                 </header>
-                <main>
-                  <ItemListContainer title="our billboard" />
-                </main>
               </>
             }
           />
           <Route
-            path="/movie/:id-:title"
+            path="/movies/"
+            element={
+              <main>
+                <ItemListContainer
+                  title="our billboard"
+                  imgpath="assets/movies"
+                />
+              </main>
+            }
+          />
+          <Route
+            path="/movies/category/:idCategory"
+            element={
+              <main>
+                <ItemListContainer
+                  title="our billboard"
+                  imgpath="../../assets/movies"
+                />
+              </main>
+            }
+          />
+          <Route
+            path="/movies/billboard/:id-:title"
             element={
               <>
                 <ItemDetailContainer />

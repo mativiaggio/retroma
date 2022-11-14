@@ -144,6 +144,7 @@ const movies = [
     title: "a nightmare on elm street",
     price: 5.8,
     stock: 200,
+    category: "horror",
     imglocal: "anightmareonelmstreet.jpg",
     description:
       "Teenager Nancy Thompson must uncover the dark truth concealed by her parents after she and her friends become targets of the spirit of a serial killer with a bladed glove in their dreams, in which if they die, it kills them in real life.",
@@ -153,6 +154,7 @@ const movies = [
     title: "carrie (1976)",
     price: 5.8,
     stock: 200,
+    category: "horror",
     imglocal: "carrie.jpg",
     description:
       "Carrie White, a shy, friendless teenage girl who is sheltered by her domineering, religious mother, unleashes her telekinetic powers after being humiliated by her classmates at her senior prom.",
@@ -162,6 +164,7 @@ const movies = [
     title: "scream (1996)",
     price: 5.4,
     stock: 200,
+    category: "horror",
     imglocal: "scream.jpg",
     description:
       "A year after the murder of her mother, a teenage girl is terrorized by a new killer, who targets the girl and her friends by using horror films as part of a deadly game.",
@@ -171,6 +174,7 @@ const movies = [
     title: "the silence of the lambs",
     price: 5.8,
     stock: 200,
+    category: "horror",
     imglocal: "thesilenceofthelambs.jpg",
     description:
       "A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
@@ -180,6 +184,7 @@ const movies = [
     title: "poltergeist (1982)",
     price: 5.5,
     stock: 200,
+    category: "horror",
     imglocal: "poltergeist.jpg",
     description: "A family's home is haunted by a host of demonic ghosts.",
   },

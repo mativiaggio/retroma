@@ -1,0 +1,50 @@
+@use "../../sass/global/" as *;
+.movie-page {
+  height: 100vh;
+  background-color: $clr-dark-700;
+  color: white;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
+  z-index: auto;
+  background-size: cover !important;
+  background-position: center center !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  .img-container {
+    img {
+      height: 350px !important;
+      padding: 15px;
+    }
+  }
+  .detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.459);
+    backdrop-filter: blur(10px);
+    padding: 5%;
+    h2 {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    @media screen and (max-width: 62em) {
+      align-items: center;
+      background-repeat: no-repeat !important;
+      background-attachment: scroll !important;
+      background-position: center center !important;
+      z-index: auto;
+      background-size: cover !important;
+      -webkit-background-size: cover !important;
+      -moz-background-size: cover !important;
+      -o-background-size: cover !important;
+    }
+    .add-to-cart {
+      button {
+        width: fit-content;
+        font-size: medium !important;
+      }
+    }
+  }
+}

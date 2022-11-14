@@ -1,11 +1,12 @@
 import "./CallToAction.scss";
+import { Link } from "react-router-dom";
 
 export default function Cta() {
   return (
     <>
-      <a href="#movies">
+      <Link to="/movies">
         <button className="btn">movies</button>
-      </a>
+      </Link>
     </>
   );
 }

@@ -1,4 +1,5 @@
-import Navlinks from "./Navlinks/Navlinks";
+import { Navlinks } from "./Navlinks/Navlinks";
+import { Category } from "./Navlinks/Navlinks";
 import CartWidget from "./CartWidget/CartWidget";
 import "./Navbar.scss";
 
@@ -27,17 +28,10 @@ function Navbar() {
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
               {/* NAVLINKS CON COMPONENTE */}
               <Navlinks name="Home" section="/" />
-              <li className="nav-item">
-                <a
-                  className="nav-link active"
-                  aria-current="page"
-                  href="#movies"
-                >
-                  movies
-                </a>
-              </li>
+              <Navlinks name="Movies" section="/movies" />
               <Navlinks name="About" section="/about" />
               <Navlinks name="Contact" section="/contact" />
+              <Category />
               <CartWidget />
             </ul>
           </div>

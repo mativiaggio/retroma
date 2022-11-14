@@ -46,3 +46,20 @@ div {
     }
   }
 }
+
+.dropdown-menu {
+  background-color: $clr-dark-500 !important;
+  margin: 10px !important;
+  padding: 10px !important;
+  a {
+    margin: 0 !important;
+    padding: 10px 10px 10px 10px !important;
+    width: fit-content;
+    position: absolute;
+    left: auto;
+    text-align: start !important;
+    &:hover {
+      background-color: #00000000 !important;
+    }
+  }
+}

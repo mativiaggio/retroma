@@ -6,12 +6,12 @@ function Item(props) {
   return (
     <div
       className="movie-card"
-      style={{ backgroundImage: `url("assets/movies/${props.imglocal}")` }}
+      style={{ backgroundImage: `url("${props.imgpath}/${props.imglocal}")` }}
     >
       <div className="backdrop">
         <h1>{props.title}</h1>
         <p>{props.descr}</p>
-        <Link to={`movie/${props.id}-${props.title}`}>
+        <Link to={`/movies/billboard/${props.id}-${props.title}`}>
           <button>more</button>
         </Link>
       </div>
