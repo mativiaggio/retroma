@@ -1,7 +1,6 @@
 import "./App.css";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Header } from "./components/Header/Header";
-import { Footer } from "./components/Footer/Footer";
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ItemDetailContainer } from "./components/ItemDetail/ItemDetailContainer";
@@ -23,7 +22,6 @@ function App() {
                   <header className="header">
                     <Header title="Retroma" imglocal="header-image.jpg" />
                   </header>
-                  <Footer title="Retroma" copyright="© all rights reserved" />
                 </>
               }
             />
@@ -43,7 +41,6 @@ function App() {
               element={
                 <>
                   <Cart title="Welcome to your cart!" />
-                  <Footer title="Retroma" copyright="© all rights reserved" />
                 </>
               }
             />
