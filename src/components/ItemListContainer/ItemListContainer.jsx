@@ -3,10 +3,7 @@ import { useState, useEffect } from "react";
 import "./ItemListContainer.scss";
 // import { Item } from "./Item";
 import Item from "./Item";
-import getItems, {
-  getItemsByCategory,
-  getItemsOrdered,
-} from "../../Services/firestore";
+import { getItemsByCategory, getItemsOrdered } from "../../Services/firestore";
 import { useParams } from "react-router-dom";
 import Loader from "../Loaders/Loader";
 

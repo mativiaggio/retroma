@@ -13,8 +13,6 @@ import {
   limit,
 } from "firebase/firestore";
 
-import { movies } from "../data/data";
-
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 

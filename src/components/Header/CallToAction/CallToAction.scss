@@ -3,7 +3,8 @@
 .cta-button {
   min-width: 237px;
   width: fit-content;
-  height: 50px;
+  min-height: 50px;
+  height: fit-content;
   background-color: $clr-main !important;
   border: none !important;
   border-radius: 0 !important;

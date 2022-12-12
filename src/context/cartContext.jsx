@@ -6,7 +6,7 @@ export const cartContext = createContext();
 // Provider
 export function CartContextProvider({ children }) {
   const [cart, setCart] = useState([]);
-  const [isInCart, setIsInCart] = useState(false);
+  const [setIsInCart] = useState(false);
 
   function addToCart(movie, count) {
     let itemAlreadyInCart = cart.findIndex(

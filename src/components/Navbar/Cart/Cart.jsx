@@ -5,7 +5,7 @@ import Cta from "../../Header/CallToAction/CallToAction";
 import CartForm from "./CartForm";
 import {
   createOrder,
-  exportArrayToFirestore,
+  // exportArrayToFirestore,
 } from "../../../Services/firestore";
 import { useNavigate } from "react-router-dom";
 
@@ -13,9 +13,9 @@ function Cart() {
   const { cart, removeItem, clear, priceInCart } = useContext(cartContext);
   let navigate = useNavigate();
 
-  function handleExport() {
-    exportArrayToFirestore();
-  }
+  // function handleExport() {
+  //   exportArrayToFirestore();
+  // }
 
   if (cart.length === 0) {
     return (
