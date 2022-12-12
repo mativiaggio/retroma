@@ -1,0 +1,42 @@
+@use "../../sass/global/" as *;
+
+.checkout-message {
+  background-image: url("../../../public/assets/headerBackground.jpg");
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-position: center center !important;
+  z-index: auto;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  .checkout-screen {
+    backdrop-filter: blur(50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    min-height: 100vh;
+    height: fit-content;
+    h3 {
+      text-align: center;
+    }
+    .back-buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 500px;
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+        button {
+          margin-bottom: 10px;
+        }
+      }
+      //   button {
+      //     margin-right: 10px;
+      //   }
+    }
+  }
+}

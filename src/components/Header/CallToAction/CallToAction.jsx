@@ -5,7 +5,7 @@ export default function Cta() {
   return (
     <>
       <Link to="/movies">
-        <button className="btn">movies</button>
+        <button className="cta-button">movies</button>
       </Link>
     </>
   );

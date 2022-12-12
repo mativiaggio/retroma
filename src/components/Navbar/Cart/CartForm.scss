@@ -1,0 +1,53 @@
+@use "../../../sass/global/" as *;
+
+.checkout-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  .input-div {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    label {
+      font-family: "Open Sans";
+      font-weight: 600;
+    }
+    input {
+      width: 550px;
+      margin-bottom: 10px;
+      border-radius: 15px;
+      text-indent: 5px;
+      border: none;
+      background-color: $clr-dark-700;
+      color: white;
+      height: 40px;
+      @media screen and (max-width: 551px) {
+        width: 100vw;
+      }
+      &:focus {
+        background-color: $clr-dark-700;
+        box-shadow: inset 15px 15px 15px rgba(36, 36, 36, 0.2),
+          inset -15px -15px 15px rgba(36, 36, 36, 0.2);
+        border-color: transparent !important;
+        outline: none;
+        color: white;
+      }
+    }
+  }
+  .checkout-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}

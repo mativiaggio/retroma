@@ -205,8 +205,6 @@ const movies = [
     year: 1984,
     duration: "1h 31m",
     stars: "Heather Langenkamp, Johnny Depp, Robert Englund.",
-    imglocal: "carrie.jpg",
-
     imglocal: "anightmareonelmstreet.jpg",
     description:
       "Teenager Nancy Thompson must uncover the dark truth concealed by her parents after she and her friends become targets of the spirit of a serial killer with a bladed glove in their dreams, in which if they die, it kills them in real life.",

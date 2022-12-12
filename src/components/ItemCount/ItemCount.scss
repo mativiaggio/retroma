@@ -1,15 +1,19 @@
-@use "../../../sass/global/" as *;
+@use "../../sass/global/" as *;
 
-.cta-button {
-  min-width: 237px;
-  width: fit-content;
-  height: 50px;
+.itemcount_control {
+  margin-bottom: 10px;
+}
+
+.amount-button {
+  width: 45px !important;
+  height: 45px !important;
   background-color: $clr-main !important;
   border: none !important;
   border-radius: 0 !important;
   box-shadow: inset 0 0 0 0 $clr-dark-700 !important;
   transition: ease-in-out 0.2s !important;
   border: 3px solid $clr-dark-700 !important;
+  //border-radius: 50px !important;
   text-decoration: none;
   font-size: 22px !important;
   text-transform: uppercase !important;
@@ -17,7 +21,17 @@
   font-weight: 800 !important;
   font: "Open Sans" !important;
   letter-spacing: 0.3em !important;
+  padding-left: 8px !important;
+  margin-right: 20px;
   &:hover {
     box-shadow: inset 0 -50px 0 0 $clr-dark-700 !important;
   }
 }
+
+.amount-count {
+  margin-right: 20px;
+}
+
+// * {
+//   outline: 1px solid blue;
+// }

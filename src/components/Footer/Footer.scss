@@ -1,0 +1,15 @@
+@use "../../sass/global/" as *;
+
+.footer-container {
+  background-color: black !important;
+  min-height: 50vh;
+  height: fit-content;
+  .footer-title {
+    display: flex;
+    justify-content: center;
+    h1 {
+      color: white;
+      font: "Open Sans";
+    }
+  }
+}
